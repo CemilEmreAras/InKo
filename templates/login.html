@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="">Kullanıcı Adı:</label>
+        <input type="text" class="form-control mb-2" name="kullanici">
+        <label for="">Şifre:</label>
+        <input type="password" name="sifre" class="form-control mb-2" id="">
+        <input type="submit" value="Giriş Yap" class="btn btn-primary mb-2">
+    </form>
+</div>
+  
+{% endblock content %}
+
